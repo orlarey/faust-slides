@@ -1,0 +1,46 @@
+\pdfminorversion=4
+\documentclass[xcolor=pdftex,dvipsnames,table]{beamer}
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+
+\usetikzlibrary{mindmap,trees}
+
+% \usepackage{rail}
+% \railoptions{-t -h}
+
+\mode<presentation>
+{
+	\setbeamercovered{transparent}
+	\setbeamertemplate{itemize item}[square]
+	\setbeamertemplate{itemize subitem}[triangle]
+	\beamertemplatetransparentcovered
+}
+
+\newcommand\Fontvi{\fontsize{6}{7.2}\selectfont}
+\newcommand{\faust}		{\textsc{Faust}}
+
+\usepackage[utf8]{inputenc}
+
+\newcommand{\breathe}{\vspace{4mm}}
+\newcommand{\lcolorb}[1]{\color<#1>[rgb]{0,0,1}}
+\newcommand{\lcolort}[1]{\color<#1>[rgb]{0.5,0,0}}
+
+\newcommand{\farg}[1]{\textrm{\textit{#1}}}
+
+\definecolor{yobg}{rgb}{0.9,0.9,1}
+\definecolor{yotxt}{rgb}{0.01,0.01,0.52}
+
+% parameters for listings
+\lstset{
+    language=C++,
+    basicstyle=\ttfamily\color{yotxt},
+    numbers=none,
+    stepnumber=2,
+    backgroundcolor=\color{yobg},
+    captionpos=b
+}
+
+\begin{document}
