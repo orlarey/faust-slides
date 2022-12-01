@@ -2,7 +2,7 @@
 
 This repository is a collection slides on the Faust programming language. These slides are available for anyone to use to facilitate presentations about Faust without having to reinvent the wheel, so to speak. Feel free to fork!
 
-Each slide is an independant Latex/Beamer file. A presentation is a very simple latex file that includes all the required slides. It has the following structure:
+Each slide is an independent Latex/Beamer file. A presentation is a very simple latex file that includes all the required slides. It has the following structure:
 
 	\input{footheaders/header.tex}
 	\input{slides/title.tex}
@@ -11,7 +11,7 @@ Each slide is an independant Latex/Beamer file. A presentation is a very simple 
 	...
 	\input{footheaders/footer.tex}
 
-It is therefore very easy to modify the `presentation1.tex` file in order to add or remove slides according to your own needs. New presentations can be added to the folder. If the name of the new presentation starts with `presentation` it will be automatically recognize by the Makefile and translated to pdf.
+It is therefore very easy to modify the `presentation1.tex` file to add or remove slides according to your own needs. New presentations can also be added to the folder. If the name of the new presentation starts with `presentation` it will be automatically recognize by the Makefile and translated to pdf.
 
 ## Slides
 
@@ -21,7 +21,7 @@ The contribution of new slides by everyone is encouraged through pull requests.
 
 ## Images
 
-The folder `images` contains all the images needed by the slides. 
+The `images` folder contains all the images needed by the slides. 
 
 ## Header and Footer
 
