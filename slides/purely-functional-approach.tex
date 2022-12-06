@@ -1,0 +1,11 @@
+%----------------------------
+\begin{frame}[fragile]{Purely Functional Approach}
+    \begin{itemize}
+        \item Signals are functions: $\mathbb{S}=\mathrm{time}\rightarrow\mathrm{sample}$,
+        \item Faust primitives are signal processors: $\mathbb{P}=\mathbb{S}^m\rightarrow\mathbb{S}^n$,
+        \item Faust composition operations (\lstinline|<: :> : , ~|) are binary functions on signal processors: $\mathbb{A}=\mathbb{P}\times\mathbb{P}\rightarrow\mathbb{P}$,
+        \item User defined functions are higher order functions on signal processors: $\mathbb{U}=\mathbb{P}^n\rightarrow\mathbb{P}$,
+        \item A Faust program denotes a signal processor.
+    \end{itemize}
+
+\end{frame}
