@@ -1,0 +1,20 @@
+
+\begin{frame}[fragile]{Sample level semantics}
+    Sawtooth signal by step of $0.01$:
+    \begin{lstlisting}
+        decimal = _ <: _, int : -;
+        process = 0.01 : (+:decimal) ~ _;
+    \end{lstlisting}
+    
+    Block-diagram:
+    \begin{center}
+        \includegraphics[scale=0.4]{images/sawtooth-diag}
+    \end{center}
+    
+    Signal equation:
+    \begin{eqnarray*}
+        y(t<0) & = & 0\\
+        y(t\geq 0) & = & decimal(y(t-1) + 0.01)
+    \end{eqnarray*}
+    
+\end{frame}

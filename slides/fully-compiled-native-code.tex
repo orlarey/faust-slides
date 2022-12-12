@@ -1,0 +1,23 @@
+\begin{frame}[fragile]{Fully compiled to native code}
+    Faust code:
+    \begin{lstlisting}
+        process = _,_ <: +,-;
+    \end{lstlisting}
+    
+    Block-diagram:
+    \begin{center}
+        \includegraphics[scale=0.4]{images/expaw}
+    \end{center}
+    
+    C++ translation:
+    \begin{lstlisting}
+        for (int i = 0; (i < count); i = (i + 1)) {
+        float fTemp0 = input0[i];
+        float fTemp1 = input1[i];
+        output0[i] = fTemp0 + fTemp1;
+        output1[i] = fTemp0 - fTemp1;
+        }
+    \end{lstlisting}
+    
+\end{frame}
+

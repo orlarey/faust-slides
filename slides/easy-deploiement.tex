@@ -1,0 +1,147 @@
+\begin{frame}[fragile]{Easy Deployment}
+    \begin{columns}
+        \column{.2\textwidth}
+        \begin{center}
+          \href{file:/Users/yannorlarey/Documents/demo-faust/0-Videos/1-faust-owl-android.mp4}{\includegraphics[width=2.5cm,keepaspectratio=true]{images/owl.jpg}}
+        \end{center}
+
+        \column{.125\textwidth}
+        \begin{center}
+          \href{file:/Users/yannorlarey/Documents/demo-faust/0-Videos/5.1-MoForte-PowerChord.mp4}{\includegraphics[width=1cm,keepaspectratio=true]{images/moforte.png}}
+        \end{center}
+
+        \column{.2\textwidth}
+        \begin{center}
+          \href{file:/Users/yannorlarey/Documents/demo-faust/0-Videos/5.2-Geo-Shred.mp4}{\includegraphics[width=2cm,keepaspectratio=true]{images/GeoShred}}
+        \end{center}
+
+        \column{.125\textwidth}
+        \begin{center}
+            \href{file:/Users/yannorlarey/Documents/demo-faust/0-Videos/2-faust-ros.mp4}{\includegraphics[width=1.5cm,keepaspectratio=true]{images/emoxone}}
+          \end{center}
+
+        \column{.2\textwidth}
+        \begin{center}
+          \href{file:/Users/yannorlarey/Documents/demo-faust/0-Videos/3-Striso.mp4}{\includegraphics[width=2.5cm,keepaspectratio=true]{images/striso.jpg}}
+        \end{center}
+
+    \end{columns}
+
+    \begin{columns}
+       
+        \column{.2\textwidth}
+        \begin{center}
+          \includegraphics[width=2cm,keepaspectratio=true]{images/mod-duo}
+        \end{center}
+
+        \column{.2\textwidth}
+        \begin{center}
+          \includegraphics[width=1.5cm,keepaspectratio=true]{images/bela-mini}
+        \end{center}
+
+        \column{.2\textwidth}
+        \begin{center}
+          \includegraphics[width=2cm,keepaspectratio=true]{images/sam-board}
+        \end{center}
+
+        \column{.4\textwidth}
+        \begin{center}
+        \href{http://foo-yc20.codeforcode.com}{\includegraphics[width=4cm,keepaspectratio=true]{images/yc20web}}
+    \end{center}
+\end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Easy Deployment}{Separation of concern}
+
+    The \emph{architecture file} describes how to connect the audio computation to the external world.
+    
+    \begin{columns}[t]
+    
+    \begin{column}{0.25\textwidth}
+        \begin{center}
+         \includegraphics[height=0.425\textheight]{images/FL-Faust_Construction3}
+         \end{center}
+    
+    \end{column}
+    \begin{column}{0.75\textwidth}
+    
+        \begin{center}
+        \includegraphics[height=0.2\textheight]{images/FaustArchitectureDSPCode}
+        \hspace{1cm}
+        \includegraphics[height=0.2\textheight]{images/FaustArchitectureModules}
+        \end{center}
+    
+        \begin{center}
+        \includegraphics[height=0.2\textheight]{images/FaustArchitectureComplete}
+        \end{center}
+    \end{column}
+    \end{columns}
+    
+\end{frame}
+    
+    
+    
+\begin{frame}[shrink=10]{Easy Deployment}{Examples of supported architectures}
+    \begin{columns}[t]
+    
+    \begin{column}{0.45\textwidth}
+        %\pause
+        \begin{itemize}
+            \item Audio plugins :
+            \begin{itemize}
+                \item AudioUnit
+                \item LADSPA
+                \item DSSI
+                \item LV2
+                \item Max/MSP
+                \item VST
+                \item PD
+                \item Csound
+                \item Supercollider
+                \item Pure
+                \item Chuck
+                \item JUCE
+                \item Unity
+            \end{itemize}
+            \item Devices :
+            \begin{itemize}
+                \item OWL
+                \item MOD
+                \item BELA
+                \item SAM
+            \end{itemize}
+        \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.45\textwidth}
+            \begin{itemize}
+                \item Audio drivers :
+                \begin{itemize}
+                    \item Jack
+                    \item Alsa
+                    \item CoreAudio
+                    \item Web Audio API
+                \end{itemize}
+                \item Graphic User Interfaces :
+                \begin{itemize}
+                    \item QT
+                    \item GTK
+                    \item Android
+                    \item iOS
+                    \item HTML5/SVG
+                \end{itemize}
+                \item Other User Interfaces :
+                \begin{itemize}
+                    \item MIDI
+                    \item OSC
+                    \item HTTPD
+                \end{itemize}
+            \end{itemize}
+    \end{column}
+    \end{columns}
+\end{frame}
+  

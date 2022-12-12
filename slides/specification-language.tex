@@ -1,0 +1,17 @@
+\begin{frame}[fragile]{Specification Language}{Leave the implementation to the compiler}
+User's code:
+\begin{lstlisting}
+process = _<:(*(0.5):@(2)),(@(1):*(0.5):@(1)):>_;
+\end{lstlisting}
+
+Block-diagram:
+\begin{center}
+    \includegraphics[scale=0.4]{images/equiv1-diag}
+\end{center}
+
+Equivalent, more efficient code
+\begin{lstlisting}
+process = @(2);
+\end{lstlisting}
+
+\end{frame}
