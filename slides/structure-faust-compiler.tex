@@ -1,0 +1,16 @@
+
+%----------------------------------------------------------------------------------
+\begin{frame}{Structure of the Faust Compiler}{}
+    %----------------------------------------------------------------------------------
+
+    \begin{center}
+        \includegraphics[width=0.80\columnwidth]{images/compilation-chain-3}
+
+        \includegraphics[width=0.80\columnwidth]{images/code-generation-chain}
+    \end{center}
+
+    \begin{itemize}
+    \item \emph{Semantic phase}: transforms the signal processor denoted by a Faust program into the list of signals expressions it computes.
+    \item \emph{Code generation}: generates the best possible implementation for this list of signal expressions
+    \end{itemize}
+\end{frame}

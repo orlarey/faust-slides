@@ -1,0 +1,90 @@
+
+%----------------------------------------------------------------------------------
+\begin{frame}{Architectures and Deployment}{Separation of concern}
+%----------------------------------------------------------------------------------
+The \emph{architecture file} describes how to connect the audio computation to the external world.
+
+\begin{columns}[t]
+
+\begin{column}{0.25\textwidth}
+	\begin{center}
+ 	\includegraphics[height=0.425\textheight]{images/FL-Faust_Construction3}
+ 	\end{center}
+
+\end{column}
+\begin{column}{0.75\textwidth}
+
+	\begin{center}
+	\includegraphics[height=0.2\textheight]{images/FaustArchitectureDSPCode}
+	\hspace{1cm}
+	\includegraphics[height=0.2\textheight]{images/FaustArchitectureModules}
+	\end{center}
+
+	\begin{center}
+	\includegraphics[height=0.2\textheight]{images/FaustArchitectureComplete}
+	\end{center}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+%----------------------------------------------------------------------------------
+\begin{frame}[shrink=10]{Architectures and Deployment}{Examples of supported architectures}
+%----------------------------------------------------------------------------------
+\begin{columns}[t]
+
+\begin{column}{0.45\textwidth}
+	%\pause
+	\begin{itemize}
+		\item Audio plugins :
+		\begin{itemize}
+			\item AudioUnit
+			\item LADSPA
+			\item DSSI
+			\item LV2
+			\item Max/MSP
+			\item VST
+			\item PD
+			\item CSound
+			\item Supercollider
+			\item Pure
+			\item Chuck
+			\item Octave
+			\item Flash
+		\end{itemize}
+	\end{itemize}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+		\begin{itemize}
+			\item Audio drivers :
+			\begin{itemize}
+				\item Jack
+				\item Alsa
+				\item CoreAudio
+				\item Web Audio API
+			\end{itemize}
+			\item Graphic User Interfaces :
+			\begin{itemize}
+				\item QT
+				\item GTK
+				\item Android
+				\item iOS
+				\item HTML5/SVG
+			\end{itemize}
+			\item Other User Interfaces :
+			\begin{itemize}
+				\item OSC
+				\item HTTPD
+			\end{itemize}
+		\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Architectures and Deployment}
+	\Large $\rightarrow$ Deployment Demo
+\end{frame}
+
